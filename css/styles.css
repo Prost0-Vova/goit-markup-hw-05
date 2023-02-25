@@ -103,7 +103,7 @@ img {
   padding-bottom: 24px;
   justify-content: center;
   position: relative;
-  transition: 250ms;
+  transition-duration: 250ms;
  transition-property: color;
   animation-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -154,7 +154,7 @@ color: var(--logo-blue-color);
   font-size: 16px;
   line-height: 1.5;
   text-decoration: none;
-  transition: 250ms;
+  transition-duration: 250ms;
   transition-property: color;
   animation-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -192,7 +192,7 @@ color: var(--logo-blue-color);
   border-color: var(--logo-blue-color);
   border-radius: 4px;
   cursor: pointer;
-  transition: 250ms;
+  
   transition-property: background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -319,10 +319,10 @@ color: var(--logo-blue-color);
   color: var(--our-team-background-color);
   background-color: var(--logo-blue-color);
   transform: translateY(100%);
-  transition: transform 250ms;
+  transition-duration: 250ms;
   
 }
-.app-image:hover  .app-description{
+.portfolio-link:hover  .app-description{
   
   transform: translateY(0%) 
   
@@ -572,14 +572,14 @@ fill: var(--grey-color);
   width: 100%;
   height: 100%;
    color: blue;
-   transition: 250ms;
+   
    transition-property: border, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link:hover,.customers-link:focus{
   border: 1px solid var(--accent-color);
-border-radius: 4px;
+
  fill: var(--accent-color);
  transition: transform 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -663,10 +663,8 @@ margin-top: 16px;
   background-color: var(--text-color);
   width: 100%;
   height: 100%;
-  transition: 250ms;
-   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 .socials-link-footer:hover,.socials-link-footer:focus{
   background-color: var(--green-color);
@@ -760,7 +758,8 @@ height: 100%;
   max-width: 408px;
   max-height: 576px;
   background-color: var(--background-white-color);
-  transition: transform 250ms;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
   
