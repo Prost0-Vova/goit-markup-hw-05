@@ -103,12 +103,15 @@ img {
   padding-bottom: 24px;
   justify-content: center;
   position: relative;
+  transition: 250ms;
+ transition-property: color;
+  animation-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-link:hover,
 .navigation-link:focus {
   color: var(--accent-color);
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .navigation-link.current {
   display: block;
@@ -151,6 +154,10 @@ color: var(--logo-blue-color);
   font-size: 16px;
   line-height: 1.5;
   text-decoration: none;
+  transition: 250ms;
+  transition-property: color;
+  animation-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-nav:hover,
@@ -181,9 +188,14 @@ color: var(--logo-blue-color);
   color: var(--text-white-color);
   background-color: var(--logo-blue-color);
   border: 0px solid;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: var(--logo-blue-color);
   border-radius: 4px;
   cursor: pointer;
+  transition: 250ms;
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   margin-top: 48px;
   margin-left: auto;
@@ -191,16 +203,10 @@ color: var(--logo-blue-color);
 }
 .button-order:hover,
 .button-order:focus {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: "Roboto";
-  color: var(--text-white-color);
+  
   background-color: var(--accent-color);
   border-color: var(--accent-color);
-  cursor: pointer;
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 /* Portfolio */
@@ -227,7 +233,7 @@ color: var(--logo-blue-color);
 }
 
 .portfolio-button {
-  background: var(--our-team-background-color);
+  background-color: var(--our-team-background-color);
   color: var(--logo-blue-color);
   font-weight: 500;
   font-family: inherit;
@@ -238,6 +244,9 @@ color: var(--logo-blue-color);
 
   border: 1px solid transparent;
   border-radius: 4px;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:hover,
@@ -259,6 +268,10 @@ color: var(--logo-blue-color);
 .link{
   display: block;
   text-decoration:none;
+  transition: 250ms;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
   color: var(--text-h-color)
 }
@@ -291,21 +304,28 @@ color: var(--logo-blue-color);
 .app-image{
   position: relative;
   overflow: hidden;
+  
 }
 .app-description{
+  
+   
   position: absolute;
   padding: 40px 32px 164px 32px;
   top: 0;
   left: 0;
+ 
   width: 100%;
   height: 100%;
   color: var(--our-team-background-color);
   background-color: var(--logo-blue-color);
   transform: translateY(100%);
   transition: transform 250ms;
+  
 }
-.app-image:hover .app-description{
-  transform: translateY(0%)
+.app-image:hover  .app-description{
+  
+  transform: translateY(0%) 
+  
 
 }
 
@@ -552,6 +572,10 @@ fill: var(--grey-color);
   width: 100%;
   height: 100%;
    color: blue;
+   transition: 250ms;
+   transition-property: border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link:hover,.customers-link:focus{
   border: 1px solid var(--accent-color);
@@ -588,11 +612,15 @@ margin-top: 8px;
   background-color: var(--logo-blue-color);
   width: 100%;
   height: 100%;
+   transition: 250ms;
+   transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-link:hover,.socials-link:focus{
   background-color: var(--accent-color);
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ 
+ 
 }
 .socials-icon{
   width: 16px;
@@ -635,6 +663,10 @@ margin-top: 16px;
   background-color: var(--text-color);
   width: 100%;
   height: 100%;
+  transition: 250ms;
+   transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-link-footer:hover,.socials-link-footer:focus{
   background-color: var(--green-color);
@@ -712,7 +744,7 @@ width: 264px;
   height: 100%;
   padding: 20px 0;
   background: rgba(46, 47, 66, 0.4);
-  transition: opacity 500ms, visibility 500ms;
+  transition: opacity 250ms, visibility 250ms;
 }
 
 .backdrop.is-hidden{
@@ -728,9 +760,10 @@ height: 100%;
   max-width: 408px;
   max-height: 576px;
   background-color: var(--background-white-color);
-  transition: transform 500ms;
+  transition: transform 250ms;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
+  
 }
 
 .modal-close {
@@ -745,6 +778,8 @@ border-radius: 4px;
   display: flex;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 
