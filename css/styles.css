@@ -107,7 +107,8 @@ img {
 .navigation-link:hover,
 .navigation-link:focus {
   color: var(--accent-color);
-  
+  transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-link.current {
   display: block;
@@ -198,6 +199,8 @@ color: var(--logo-blue-color);
   background-color: var(--accent-color);
   border-color: var(--accent-color);
   cursor: pointer;
+  transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Portfolio */
@@ -554,6 +557,8 @@ fill: var(--grey-color);
   border: 1px solid var(--accent-color);
 border-radius: 4px;
  fill: var(--accent-color);
+ transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-icon{
@@ -585,7 +590,9 @@ margin-top: 8px;
   height: 100%;
 }
 .socials-link:hover,.socials-link:focus{
-  background-color: var(--accent-color)
+  background-color: var(--accent-color);
+  transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-icon{
   width: 16px;
@@ -630,7 +637,9 @@ margin-top: 16px;
   height: 100%;
 }
 .socials-link-footer:hover,.socials-link-footer:focus{
-  background-color: var(--green-color)
+  background-color: var(--green-color);
+  transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-icon-footer{
   width: 24px;
@@ -742,8 +751,13 @@ border: 1px solid rgba(0, 0, 0, 0.1);
   width: 24px;
   height: 24px;
     border-radius: 50%;
-  background-color: var(--text-color);
+  background-color: var(--text-color);  
   
+}
+.modal-close:hover, .modal-close:focus{
+  background-color: var(--accent-color);
+  transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button-icon{
